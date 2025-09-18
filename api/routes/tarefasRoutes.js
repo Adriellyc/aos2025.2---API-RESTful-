@@ -11,8 +11,8 @@ const tarefasRouter = Router();
 
 tarefasRouter.post("/", criarNovaTarefa);
 tarefasRouter.get("/", listarTodasTarefas);
-tarefasRouter.get("/:taskId", pegarTarefaPorId);
-tarefasRouter.put("/:taskId", atualizarTarefaPorId);
-tarefasRouter.delete("/:taskId", deletarTarefaPorId);
+tarefasRouter.get("/:objectId", pegarTarefaPorId);
+tarefasRouter.put("/:objectId", atualizarTarefaPorId);
+tarefasRouter.delete("/:objectId", deletarTarefaPorId);
 
 export default tarefasRouter;

@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
 
 class TarefaModel {
-  constructor(titulo, concluida = false) {
-    this.id = uuidv4();
-    this.titulo = titulo;
+  constructor(descricao, concluida = false) {
+    this.objectId = uuidv4();
+    this.descricao = descricao;
     this.concluida = concluida;
   }
 }
